@@ -34,7 +34,7 @@
     <a
       class="menu-item"
       target="_blank"
-      href="https://github.com/stefan-wr"
+      href="https://github.com/stefan-wr/mamADIF-vue"
     >
       <span>Github</span><i class="fab fa-github" />
     </a>

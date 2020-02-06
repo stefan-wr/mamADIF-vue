@@ -36,7 +36,7 @@
 
       <!-- Links -->
       <div class="anonymous center links grid-home-right">
-        <a class="a-fancy" href="#">&lt;github&gt;</a>
+        <a class="a-fancy" href="https://github.com/stefan-wr/mamADIF-vue">&lt;github&gt;</a>
         <router-link :to="{ name: 'privacy' }" class="a-fancy" title="Open the privacy policy."
           >&lt;privacy&gt;</router-link
         >
