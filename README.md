@@ -1,2 +1,24 @@
-# mamADIF-vue
-ADIF (Amateur Data Interchange Format) file manipulator written as a a web-app with VUE.JS
+# mamadif-vue
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,0 +1,322 @@
+body {
+  background-color: $main-background-color;
+  color: $txt-color-normal;
+  font-size: 100%;
+  min-width: $min-page-width;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+.txt-content {
+  max-width: 870px;
+  margin-bottom: 48px;
+}
+
+// Headings
+// ------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $metropolis;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+@include large {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@include medium {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+}
+
+// Section
+// ------------------------------
+section {
+  padding-top: 1.3em;
+  font-size: 18px;
+
+  @include large {
+    font-size: 16px;
+  }
+
+  @include medium {
+    font-size: 14px;
+  }
+}
+
+// Reset of some default stylings
+// ------------------------------
+button {
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: $txt-color-normal;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Aligning Classes
+// --------------------------
+.center {
+  text-align: center !important;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.right {
+  text-align: right !important;
+}
+
+// Color Classes
+// --------------------------
+.color-accent {
+  color: $txt-color-accent;
+}
+
+.txt-grad {
+  color: $button-light-color;
+  background-image: $main-gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Hide Classes
+// --------------------------
+.hide-s {
+  @include small {
+    display: none !important;
+  }
+}
+
+.hide-m {
+  @include medium {
+    display: none !important;
+  }
+}
+
+.hide-l {
+  @include large {
+    display: none !important;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.show-flex {
+  display: flex !important;
+}
+
+// Fonts Classes
+// --------------------------
+.metropolis {
+  font-family: $metropolis;
+}
+
+.inter {
+  font-family: $inter;
+}
+
+.anonymous {
+  font-family: $anonymous;
+  font-weight: bold;
+}
+
+.fas, .fab {
+  margin-left: 0.5em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.mormal {
+  font-weight: 500;
+}
+
+// Hover FX Classes
+// --------------------------
+.hover-fx {
+  transition: filter $transition-time, box-shadow $transition-time;
+
+  &:hover {
+    filter: brightness(110%);
+    box-shadow: -4px -4px 5px rgba(255, 255, 255, 0.3), 4px 4px 5px rgba(21, 99, 102, 0.07);
+  }
+}
+
+.hover-bright {
+  &:hover {
+    filter: brightness(110%);
+  }
+}
+
+.hover-fx-txt {
+  transition: filter $transition-time;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+}
+
+.a-fancy {
+  text-decoration: underline;
+  text-decoration-color: $txt-color-accent;
+
+  &:hover {
+    @extend .txt-grad;
+  }
+}
+
+.hover-red {
+  &:hover {
+    color: $txt-color-alert !important;
+  }
+}
+
+// Table Styling
+// --------------------------
+.mam-table {
+  width: 100%;
+
+  // Wrapper for a table row
+  .mam-table-row-wrap {
+    @include flex-center;
+    height: 100%;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      box-shadow: 0 -1px 0 $main-accent-color;
+      border-bottom: 1px solid $main-accent-color !important;
+    }
+  }
+
+  .mam-table-row-wrap:last-child {
+    border-color: transparent;
+  }
+
+  // Row
+  .mam-row {
+    min-height: 42px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // Responsive Row Paddings
+    padding: 0.3em 0.5em;
+    @include medium {
+      padding: 0.5em 0.5em;
+      min-height: 48px;
+    }
+  }
+
+  // Head
+  .mam-head {
+    span {
+      font-size: 1.1em;
+      font-weight: 800;
+
+      @include medium {
+        font-size: 1.2em;
+      }
+    }
+
+    button {
+      font-size: 0.8em !important;
+    }
+  }
+
+  // Button in table
+  .mam-table-btn {
+    height: 32px;
+    padding: 0 0.9em;
+    font-size: 0.85em;
+    font-weight: bold;
+    border-radius: 6px;
+
+    @include medium {
+      height: 36px;
+      font-size: 1em;
+    }
+
+    i {
+      height: 1em;
+      width: 1em;
+    }
+
+    &.light {
+      background-color: $button-light-color;
+      color: $button-light-txt-color;
+    }
+    &.dark {
+      background: $main-gradient;
+      color: $button-dark-txt-color;
+    }
+  }
+}

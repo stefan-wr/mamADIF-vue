@@ -1,0 +1,158 @@
+// Anonymous Pro
+@font-face {
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Anonymous Pro Regular'), local('AnonymousPro-Regular'),
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-regular.svg#AnonymousPro') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-700.eot');
+    src: local('Anonymous Pro Bold'), local('AnonymousPro-Bold'),
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-700.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-700.woff2') format('woff2'),
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-700.woff') format('woff'),
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-700.ttf') format('truetype'),
+        url('assets/fonts/anonymous-pro/anonymous-pro-v13-latin-700.svg#AnonymousPro') format('svg');
+}
+
+// Metropolis
+@font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/metropolis/Metropolis-Regular.eot');
+    src: local('Metropolis Regular'), local('Metropolis Regular'),
+        url('assets/fonts/metropolis/Metropolis-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/metropolis/Metropolis-Regular.woff2') format('woff2'),
+        url('assets/fonts/metropolis/Metropolis-Regular.woff') format('woff'),
+        url('assets/fonts/metropolis/Metropolis-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('assets/fonts/metropolis/Metropolis-Medium.eot');
+    src: local('Metropolis Medium'), local('Metropolis Medium'),
+        url('assets/fonts/metropolis/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/metropolis/Metropolis-Medium.woff2') format('woff2'),
+        url('assets/fonts/metropolis/Metropolis-Medium.woff') format('woff'),
+        url('assets/fonts/metropolis/Metropolis-Medium.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('assets/fonts/metropolis/Metropolis-SemiBold.eot');
+    src: local('Metropolis SemiBold'), local('Metropolis SemiBold'),
+        url('assets/fonts/metropolis/Metropolis-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/metropolis/Metropolis-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/metropolis/Metropolis-SemiBold.woff') format('woff'),
+        url('assets/fonts/metropolis/Metropolis-SemiBold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('assets/fonts/metropolis/Metropolis-Bold.eot');
+    src: local('Metropolis Bold'), local('Metropolis Bold'),
+        url('assets/fonts/metropolis/Metropolis-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/metropolis/Metropolis-Bold.woff2') format('woff2'),
+        url('assets/fonts/metropolis/Metropolis-Bold.woff') format('woff'),
+        url('assets/fonts/metropolis/Metropolis-Bold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('assets/fonts/metropolis/Metropolis-ExtraBold.eot');
+    src: local('Metropolis ExtraBold'), local('Metropolis ExtraBold'),
+        url('assets/fonts/metropolis/Metropolis-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/metropolis/Metropolis-ExtraBold.woff2') format('woff2'),
+        url('assets/fonts/metropolis/Metropolis-ExtraBold.woff') format('woff'),
+        url('assets/fonts/metropolis/Metropolis-ExtraBold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('assets/fonts/metropolis/Metropolis-Black.eot');
+    src: local('Metropolis Black'), local('Metropolis Black'),
+        url('assets/fonts/metropolis/Metropolis-Black.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/metropolis/Metropolis-Black.woff2') format('woff2'),
+        url('assets/fonts/metropolis/Metropolis-Black.woff') format('woff'),
+        url('assets/fonts/metropolis/Metropolis-Black.ttf') format('truetype'),
+}
+
+// Inter
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Inter Regular'), local('Inter Regular'),
+        url('assets/fonts/inter/Inter-Regular.woff2') format('woff2'),
+        url('assets/fonts/inter/Inter-Regular.woff') format('woff'),
+        url('assets/fonts/inter/Inter-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Inter Medium'), local('Inter Medium'),
+        url('assets/fonts/inter/Inter-Medium.woff2') format('woff2'),
+        url('assets/fonts/inter/Inter-Medium.woff') format('woff'),
+        url('assets/fonts/inter/Inter-Medium.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Inter Bold'), local('Inter Bold'),
+        url('assets/fonts/inter/Inter-Bold.woff2') format('woff2'),
+        url('assets/fonts/inter/Inter-Bold.woff') format('woff'),
+        url('assets/fonts/inter/Inter-Bold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local('Inter Black'), local('Inter Black'),
+        url('assets/fonts/inter/Inter-Black.woff2') format('woff2'),
+        url('assets/fonts/inter/Inter-Black.woff') format('woff'),
+        url('assets/fonts/inter/Inter-Black.ttf') format('truetype'),
+}

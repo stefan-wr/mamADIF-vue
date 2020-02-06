@@ -1,0 +1,91 @@
+// Colors
+// --------------------
+$main-background-color: #dedede;
+$main-background-color-light: #f3f3f3;
+$main-accent-color: #2cafa4;
+$main-accent-color-2: #39b470;
+
+// Header
+$header-color-center: #e5e5e5;
+$header-color-side: #e1e3e3;
+$header-gradient: linear-gradient(to top right,
+    $header-color-side 0%,
+    $header-color-center 40%,
+    $header-color-center 60%,
+    $header-color-side 100%);
+
+// Button
+$button-light-color: $main-background-color-light;
+$button-light-txt-color: $main-accent-color;
+$button-dark-color: $button-light-txt-color;
+$button-dark-txt-color: $button-light-color;
+
+// Gradient
+$main-gradient: linear-gradient(to bottom right,
+    $main-accent-color 0%,
+    $main-accent-color 20%,
+    $main-accent-color-2 100%);
+
+$main-gradient-h-animate: repeating-linear-gradient(to right,
+    $main-accent-color,
+    $main-accent-color-2,
+    $main-accent-color ,
+    $main-accent-color-2);
+
+// Text
+$txt-color-accent: #2cafa4;
+$txt-color-accent-dark: #2f8079;
+$txt-color-light: #a3a3a3;
+$txt-color-normal: #878787;
+$txt-color-normal: #696969; // cr: 4
+$txt-color-dark: black;
+$txt-color-alert: rgb(207, 63, 63);
+
+
+// Divider
+$divider-color: $txt-color-light;
+
+// Break Points
+// --------------------
+$min-page-width: 320px;
+$max-content-width: 90rem;
+
+$break-l: 1200px - 100px;
+$break-m: 790px;
+$break-s: 460px + 1px;
+
+// Font Family
+// --------------------
+$metropolis: Metropolis,
+Arial,
+sans-serif;
+$inter: Inter,
+Arial,
+sans-serif;
+$anonymous: "Anonymous Pro",
+Courier,
+monospace;
+
+// Transition
+// --------------------
+$transition-time: 0.123s;
+
+//Shadows
+// --------------------
+
+// Header button
+@mixin header-button-shadow {
+    box-shadow: -4px -4px 4px rgba(255, 255, 255, 0.02),
+        4px 4px 4px rgba(17, 67, 70, 0.02);
+
+    &:hover {
+        box-shadow: -6x -6px 6px rgba(255, 255, 255, 0.1),
+            6px 6px 6px rgba(17, 67, 70, 0.1);
+    }
+}
+
+// Normal text
+@mixin text-shadow {
+    text-shadow: -0.38em -0.38em 0.7em rgba(255, 255, 255, 0.75),
+        0.38em 0.38em 0.7em rgba(17, 67, 70, 0.15)
+}

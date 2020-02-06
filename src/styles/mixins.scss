@@ -1,0 +1,31 @@
+// Responsiveness
+@mixin small() {
+    @media only screen and (max-width: $break-s) {
+        @content;
+    }
+}
+
+@mixin medium() {
+    @media only screen and (max-width: $break-m) {
+        @content;
+    }
+}
+
+@mixin large() {
+    @media only screen and (max-width: $break-l) {
+        @content;
+    }
+}
+
+// Flex shortcuts
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-stretch {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
