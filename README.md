@@ -13,8 +13,8 @@ Currently mamADIF supports the following ADIF file formats:
 ### Manipulations
 Currently mamADIF supports the following manipulations:
 
-- **Delete Fields**: Deletes all occurences of a field from an ADIF file.
-- **Rename Field**: Rename all occurences of a field in an ADIF file to any given name.
+- **Delete fields**: Delete all occurences of a field from an ADIF file.
+- **Rename field**: Rename all occurences of a field in an ADIF file to any given name. MamADIF does not check wether the given name is a valid ADIF QSO-field.
 
 ## Project setup
 ```
