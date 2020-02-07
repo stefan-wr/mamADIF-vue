@@ -1,6 +1,6 @@
 <template>
   <div style="text-overflow:ellipsis;">
-    <span class="metropolis">Current&nbsp;File:</span>
+    <span class="metropolis bold">Current&nbsp;File:</span>
     <span class="filename">{{ normalizedFilename }}</span>
   </div>
 </template>
@@ -29,7 +29,6 @@ export default {
 <style lang="scss" scoped>
 .filename {
   margin-left: 0.75em;
-  font-weight: normal;
   word-break: break-all;
 }
 </style>

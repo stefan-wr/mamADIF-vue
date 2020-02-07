@@ -1,7 +1,7 @@
 <template>
   <div class="menu-wrap">
     <div
-      class="menu-button"
+      class="menu-button-wrap"
       :class="{ 'hover-fx': !menuOpen, 'hover-bright': menuOpen }"
     >
       <button
@@ -80,56 +80,57 @@ export default {
   }
 }
 
-.menu-button {
+.menu-button-wrap {
   height: 100%;
   z-index: 4;
-  border-radius: 10px;
   transition: filter $transition-time, box-shadow $transition-time;
 
-  @include medium {
+  border-radius: 10px;
+  @include large {
     border-radius: 8px;
   }
 
   button {
-    width: 45px;
-    height: 100%;
     @include flex-center;
+    height: 100%;
 
+    width: 45px;
     @include large {
       width: 40px;
     }
 
     .bars {
-      width: 25px;
       height: 15px;
-
+      width: 25px;
       @include large {
-        width: 22px;
         height: 12px;
+        width: 22px; 
       }
 
       .bar {
         width: 100%;
-        height: 3px;
         border-radius: 1000px;
         background-color: $button-light-txt-color;
-        background: $main-gradient;
-        transition: transform $transition-time * 2 ease-out, opacity $transition-time * 2 ease-out;
+        background-image: $main-gradient;
+        transition:
+          transform $transition-time*2 ease-out,
+          opacity $transition-time*2 ease-out;
 
+        height: 3px;
         @include large {
           height: 2px;
         }
       }
     }
 
-    .bars-hamburger {
+    .bars.bars-hamburger {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
     }
 
-    .bars-x {
+    .bars.bars-x {
       position: relative;
       width: 25px;
 
@@ -141,11 +142,9 @@ export default {
       .bar:nth-child(2) {
         opacity: 0;
       }
-
       .bar:first-child {
         transform: rotateZ(45deg);
       }
-
       .bar:last-child {
         transform: rotateZ(-45deg);
       }

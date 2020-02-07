@@ -13,15 +13,15 @@
           your file. Renaming fields, e.g. to allow application-specific fields to be imported by
           other log programs, is supported as well. Click on 'Select ADIF File' to start.
         </p>
-        <p>
-          <b>MamADIF will only accept .adi files. The ADX format is not yet supported.</b>
+        <p class="mormal">
+          MamADIF will only accept .adi files. The ADX format is not yet supported.
         </p>
       </section>
 
       <!-- File button -->
       <div class="center grid-home-nw">
         <HomeSelectFileButton />
-        <p class="anonymous">&lt;Your file will not be uploaded!&gt;</p>
+        <p class="anonymous no-upload">&lt;Your file will not be uploaded!&gt;</p>
       </div>
 
       <!-- Section 2 -->
@@ -125,22 +125,19 @@ export default {
 }
 
 section {
-  line-height: 1.6em;
-  font-weight: 500;
+  line-height: 1.5em;
 
   h2 {
     margin-top: 0;
-    color: $txt-color-normal;
-    font-weight: bold;
   }
 }
 
-.links {
-  font-size: 16px;
+.no-upload {
+  font-size: 0.9em;
+}
 
-  @include small {
-    font-size: 14px;
-  }
+.links {
+  font-size: 0.9em;
 
   a {
     margin: 0 12px;

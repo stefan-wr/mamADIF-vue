@@ -43,22 +43,6 @@ export default {
 
 <style lang="scss" scoped>
 .stat {
-  font-size: 46px;
-  background: $button-light-color;
-  border-radius: 0.4em;
-  padding: 0.3em 0.6em;
-  margin-bottom: 0.3em;
-
-  h3 {
-    margin: 0 0 1em 0;
-  }
-
-  .value-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .value {
     font-weight: 800;
     @include text-shadow;
@@ -71,18 +55,6 @@ export default {
 
   i {
     font-size: 0.8em;
-  }
-
-  @include large {
-    font-size: 40px;
-  }
-
-  @include medium {
-    font-size: 34px;
-  }
-
-  @include small {
-    font-size: 24px;
   }
 }
 </style>

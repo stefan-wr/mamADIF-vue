@@ -88,13 +88,7 @@ export default {
   p {
     padding: 0 1em;
 
-    font-size: 1.5em;
-    @include large {
-      font-size: 1.3em;
-    }
-    @include medium {
-      font-size: 1.1em;
-    }
+    font-size: 1.3em;
   }
 }
 

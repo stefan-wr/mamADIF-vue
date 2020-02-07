@@ -3,6 +3,15 @@ body {
   color: $txt-color-normal;
   font-size: 100%;
   min-width: $min-page-width;
+  font-size: 18px;
+
+  @include large {
+    font-size: 16px;
+  }
+
+  @include medium {
+    font-size: 14px;
+  }
 }
 
 html,
@@ -37,7 +46,7 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 @include large {
@@ -50,7 +59,7 @@ h3 {
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -64,7 +73,7 @@ h3 {
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -72,15 +81,6 @@ h3 {
 // ------------------------------
 section {
   padding-top: 1.3em;
-  font-size: 18px;
-
-  @include large {
-    font-size: 16px;
-  }
-
-  @include medium {
-    font-size: 14px;
-  }
 }
 
 // Reset of some default stylings
@@ -234,89 +234,5 @@ a {
 .hover-red {
   &:hover {
     color: $txt-color-alert !important;
-  }
-}
-
-// Table Styling
-// --------------------------
-.mam-table {
-  width: 100%;
-
-  // Wrapper for a table row
-  .mam-table-row-wrap {
-    @include flex-center;
-    height: 100%;
-    position: relative;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-    &:hover {
-      box-shadow: 0 -1px 0 $main-accent-color;
-      border-bottom: 1px solid $main-accent-color !important;
-    }
-  }
-
-  .mam-table-row-wrap:last-child {
-    border-color: transparent;
-  }
-
-  // Row
-  .mam-row {
-    min-height: 42px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    // Responsive Row Paddings
-    padding: 0.3em 0.5em;
-    @include medium {
-      padding: 0.5em 0.5em;
-      min-height: 48px;
-    }
-  }
-
-  // Head
-  .mam-head {
-    span {
-      font-size: 1.1em;
-      font-weight: 800;
-
-      @include medium {
-        font-size: 1.2em;
-      }
-    }
-
-    button {
-      font-size: 0.8em !important;
-    }
-  }
-
-  // Button in table
-  .mam-table-btn {
-    height: 32px;
-    padding: 0 0.9em;
-    font-size: 0.85em;
-    font-weight: bold;
-    border-radius: 6px;
-
-    @include medium {
-      height: 36px;
-      font-size: 1em;
-    }
-
-    i {
-      height: 1em;
-      width: 1em;
-    }
-
-    &.light {
-      background-color: $button-light-color;
-      color: $button-light-txt-color;
-    }
-    &.dark {
-      background: $main-gradient;
-      color: $button-dark-txt-color;
-    }
   }
 }

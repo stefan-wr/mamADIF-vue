@@ -2,10 +2,6 @@
   <div id="app">
     <router-view />
     <Alert />
-    <!-- div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div -->
   </div>
 </template>
 
@@ -21,11 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/fonts.scss";
-@import "@/styles/fontawesome/fontawesome.scss";
-@import "@/styles/fontawesome/brands.scss";
-@import "@/styles/normalize.scss";
-@import "@/styles/shared.scss";
+@import "@/styles/compose.scss";
 
 #app {
   font-family: "Inter", Helvetica, Arial, sans-serif;

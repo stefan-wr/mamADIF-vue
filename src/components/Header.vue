@@ -2,29 +2,23 @@
   <header>
     <div class="header-content">
       <!-- Menu button -->
-      <HeaderMenuButton
-        class="header-item header-button"
-        :file-mode="fileMode"
-      />
+      <HeaderMenuButton class="header-item header-button" :file-mode="fileMode" />
+
       <!-- Logo -->
       <HeaderLogo
         :class="{ 'logo-file': fileMode, 'logo-home': !fileMode }"
         class="header-item header-logo"
       />
+
       <!-- Divider -->
-      <div
-        :class="{ 'hide-l': fileMode, 'hide-m': !fileMode }"
-        class="header-item divider"
-      />
+      <div :class="{ 'hide-l': fileMode, 'hide-m': !fileMode }" class="header-item divider" />
+
       <!-- Labels -->
-      <HeaderFileLabel
-        v-if="fileMode"
-        class="header-item header-label file"
-      />
-      <HeaderText
-        v-else
-        class="header-item header-label text"
-      />
+      <HeaderFileLabel v-if="fileMode" class="header-item header-label file" />
+      <div v-else class="header-item header-label text">
+        <span>Amateuer Data Interchange Format file manipulator</span>
+      </div>
+
       <!-- Open and save buttons-->
       <SelectFileInput
         v-if="fileMode"
@@ -36,6 +30,7 @@
         initial-text="Save"
         class="header-item header-button save hide-s hover-fx"
       />
+
       <!-- <eoh> decoration -->
       <HeaderEOH v-else />
     </div>
@@ -47,7 +42,6 @@
 <script>
 import HeaderMenuButton from "@/components/header/HeaderMenuButton.vue";
 import HeaderLogo from "@/components/header/HeaderLogo.vue";
-import HeaderText from "@/components/header/HeaderText.vue";
 import HeaderFileLabel from "@/components/header/HeaderFileLabel.vue";
 import HeaderEOH from "@/components/header/HeaderEOH.vue";
 import SelectFileInput from "@/components/base/SelectFileInput.vue";
@@ -59,7 +53,6 @@ export default {
   components: {
     HeaderMenuButton,
     HeaderLogo,
-    HeaderText,
     HeaderFileLabel,
     HeaderEOH,
     SelectFileInput,
@@ -77,6 +70,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$header-height-full: 45px;
+$header-height-large: 40px;
+$header-border-radius-full: 10px;
+$header-border-radius-large: 8px;
+
 header {
   width: 100%;
   background-color: $header-color-center;
@@ -107,14 +105,13 @@ header {
   @include large {
     flex-wrap: wrap;
   }
-}
 
-// Margins around each header item
-.header-item {
-  margin: 12px;
-
-  @include medium {
-    margin: 10px;
+  // Margins around each header item
+  .header-item {
+    margin: 12px;
+    @include medium {
+      margin: 10px;
+    }
   }
 }
 
@@ -122,30 +119,26 @@ header {
 // ------------------------------------
 .header-logo {
   @include flex-stretch;
-  font-weight: 800;
 
-  height: 45px;
-  border-radius: 10px;
+  height: $header-height-full;
+  border-radius: $header-border-radius-full;
   line-height: 21px;
-
   @include large {
-    height: 40px;
-    border-radius: 8px;
+    height: $header-height-large;
+    border-radius: $header-border-radius-large;
     line-height: 18px;
   }
-}
 
-.logo-home {
-  @include medium {
-    flex-grow: 1;
+  &.logo-home {
+    @include medium {
+      flex-grow: 1;
+    }
   }
-}
 
-.logo-file {
-  @include large {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 10px;
+  &.logo-file {
+    @include large {
+      flex-grow: 1;
+    }
   }
 }
 
@@ -156,10 +149,10 @@ header {
   background-color: $divider-color;
   border-radius: 1000px;
   width: 2px;
-  height: 45px;
+  height: $header-height-full;
 
   @include large {
-    height: 40px;
+    height: $header-height-large;
   }
 }
 
@@ -177,7 +170,6 @@ header {
   }
 
   &.file {
-    font-weight: 700;
     @include large {
       width: 100%;
       text-align: center;
@@ -186,36 +178,34 @@ header {
   }
 }
 
-// Paddings for open and save buttons
-// ------------------------------------
-.header-button.save,
-.header-button.open {
-  padding: 0 1.4em;
-  @include medium {
-    padding: 0 1em;
-  }
-}
-
-// General header button class
+// Header button class
 // ------------------------------------
 .header-button {
   @include flex-center;
   flex-shrink: 0;
-  font-weight: 700;
+  font-weight: bold;
 
   background-color: $button-light-color;
   color: $button-light-txt-color;
 
-  height: 45px;
-  border-radius: 10px;
+  height: $header-height-full;
+  border-radius: $header-border-radius-full;
   font-size: 17px;
   line-height: 21px;
 
   @include large {
-    height: 40px;
-    border-radius: 8px;
+    height: $header-height-large;
+    border-radius: $header-border-radius-large;
     font-size: 15px;
     line-height: 18px;
+  }
+
+  &.save,
+  &.open {
+    padding: 0 1.4em;
+    @include medium {
+      padding: 0 1em;
+    }
   }
 }
 </style>

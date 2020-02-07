@@ -10,57 +10,19 @@
       preserveAspectRatio="none"
     >
       <defs>
-        <linearGradient
-          id="top-gradient"
-          x1="0%"
-          y1="100%"
-          x2="100%"
-          y2="0%"
-        >
-          <stop
-            offset="0%"
-            stop-color="#2cafa4"
-          />
-          <stop
-            offset="20%"
-            stop-color="#2cafa4"
-          />
-          <stop
-            offset="100%"
-            stop-color="#39b470"
-          />
+        <linearGradient id="top-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#2cafa4" />
+          <stop offset="20%" stop-color="#2cafa4" />
+          <stop offset="100%" stop-color="#39b470" />
         </linearGradient>
-        <linearGradient
-          id="bottom-gradient"
-          x1="0%"
-          y1="100%"
-          x2="100%"
-          y2="0%"
-        >
-          <stop
-            offset="0%"
-            stop-color="#39b470"
-          />
-          <stop
-            offset="80%"
-            stop-color="#2cafa4"
-          />
-          <stop
-            offset="100%"
-            stop-color="#2cafa4"
-          />
+        <linearGradient id="bottom-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#39b470" />
+          <stop offset="80%" stop-color="#2cafa4" />
+          <stop offset="100%" stop-color="#2cafa4" />
         </linearGradient>
       </defs>
-      <polygon
-        class="top"
-        points="42 0 100 0 100 58"
-        fill="url('#top-gradient')"
-      />
-      <polygon
-        class="bottom"
-        points="0 42 0 100 58 100"
-        fill="url('#bottom-gradient')"
-      />
+      <polygon class="top" points="42 0 100 0 100 58" fill="url('#top-gradient')" />
+      <polygon class="bottom" points="0 42 0 100 58 100" fill="url('#bottom-gradient')" />
     </svg>
     <slot />
   </main>

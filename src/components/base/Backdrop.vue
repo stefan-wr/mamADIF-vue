@@ -23,8 +23,8 @@ export default {
   opacity: 0.7;
   filter: brightness(70%);
 
-  animation: on $transition-time;
-  @keyframes on {
+  animation: fade-in $transition-time;
+  @keyframes fade-in {
     from {opacity: 0;}
     to {opacity: 0.7;}
   }
